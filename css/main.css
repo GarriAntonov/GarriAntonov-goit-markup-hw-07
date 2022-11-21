@@ -114,7 +114,7 @@ img {
   color: var(--color-two);
 }
 
-.header__link.current::after {
+.header__link--current::after {
   position: absolute;
   content: '';
   bottom: -1px;
