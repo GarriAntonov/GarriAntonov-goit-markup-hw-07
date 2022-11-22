@@ -885,7 +885,7 @@ textarea {
   background-color: var(--background-main);
 }
 
-.works-filters {
+.works__filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -897,8 +897,8 @@ textarea {
   padding-left: 0;
 }
 
-.works-item:hover,
-.works-item:focus {
+.works__item:hover,
+.works__item:focus {
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -913,11 +913,11 @@ textarea {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.works-title {
+.works__title {
   display: none;
 }
 
-.works-item {
+.works__item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -930,8 +930,8 @@ textarea {
   cursor: pointer;
 }
 
-.works-item:hover,
-.works-item:focus {
+.works__item:hover,
+.works__item:focus {
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -942,7 +942,7 @@ textarea {
   background-color: var(--color-three);
 }
 
-.works-list {
+.works__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -952,7 +952,7 @@ textarea {
   padding-left: 0;
 }
 
-.works-list > li {
+.works__list > li {
   position: relative;
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
   flex-basis: calc((100% - 60px) / 3);
@@ -960,7 +960,7 @@ textarea {
   cursor: pointer;
 }
 
-.works-list > li:hover {
+.works__list > li:hover {
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -975,12 +975,12 @@ textarea {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works-list-item {
+.works__list-item {
   position: relative;
   overflow: hidden;
 }
 
-.works-list-title {
+.works__list-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -989,11 +989,11 @@ textarea {
   margin-bottom: 4px;
 }
 
-.works-list-text {
+.works__list-text {
   color: var(--main-color);
 }
 
-.works-list-overlay {
+.works__list-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1008,7 +1008,7 @@ textarea {
   transform: translateY(100%);
 }
 
-.works-list-element:hover .works-list-overlay {
+.works__list-element:hover .works__list-overlay {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
@@ -1022,6 +1022,6 @@ textarea {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.works-list-thumb {
+.works__list-thumb {
   padding: 20px 24px;
 } /*# sourceMappingURL=main.css.map */
