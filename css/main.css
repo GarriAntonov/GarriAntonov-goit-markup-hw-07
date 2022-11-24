@@ -383,20 +383,18 @@ textarea {
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
-  background-color: var(--color-four);
+  background-color: #f5f4fa;
 }
-
 .benefits__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  color: var(--color-two);
+  color: #212121;
   margin-bottom: 10px;
 }
-
 .benefits__text {
-  color: var(--main-color);
+  color: #757575;
 }
 
 .our__activities {

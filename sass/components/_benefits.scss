@@ -31,7 +31,7 @@
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
-    background-color: var(--color-four);
+    background-color: $color-four;
   }
 
   &__title {
@@ -39,11 +39,11 @@
     font-weight: 700;
     line-height: 1.2;
     text-transform: uppercase;
-    color: var(--color-two);
+    color: $color-two;
     margin-bottom: 10px;
   }
 
   &__text {
-    color: var(--main-color);
+    color: $main-color;
   }
 }
