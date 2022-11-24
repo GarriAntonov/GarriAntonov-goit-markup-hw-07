@@ -15,7 +15,7 @@
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  color: var(--color-two);
+  color: $color-two;
   margin-bottom: 50px;
 }
 
@@ -28,7 +28,7 @@
   bottom: 0;
   width: 100%;
   height: 70px;
-  background: var(--img-overlay);
+  background: $img-overlay;
 }
 
 .our-activities__title-bottom {
@@ -38,5 +38,5 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-top: 27px;
-  color: var(--background-main);
+  color: $background-main;
 }

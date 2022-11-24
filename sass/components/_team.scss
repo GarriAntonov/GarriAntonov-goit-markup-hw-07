@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--color-four);
+  background-color: $color-four;
 }
 
 .team__list {
@@ -8,15 +8,15 @@
   display: flex;
   gap: 30px;
   padding-left: 0;
-  background-color: var(--color-four);
+  background-color: $color-four;
 }
 
 .team__item {
-  background-color: var(--background-main);
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: $background-main;
+  -webkit-box-shadow: 0px 1px 3px $box-shadow-primary, 0px 1px 1px $box-shadow-secondary,
+    0px 2px 1px $hero-backdrop-color;
+  box-shadow: 0px 1px 3px $box-shadow-primary, 0px 1px 1px $box-shadow-secondary,
+    0px 2px 1px $hero-backdrop-color;
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
@@ -30,7 +30,7 @@
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  color: var(--color-two);
+  color: $color-two;
   margin-bottom: 50px;
 }
 
@@ -39,7 +39,7 @@
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  color: var(--color-two);
+  color: $color-two;
   margin-bottom: 10px;
 }
 
@@ -47,6 +47,6 @@
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  color: var(--main-color);
+  color: $main-color;
   margin-bottom: 16px;
 }

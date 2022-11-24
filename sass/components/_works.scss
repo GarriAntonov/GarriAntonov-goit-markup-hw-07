@@ -1,37 +1,21 @@
 .works {
-  background-color: var(--background-main);
-}
+  background-color: $background-main;
 
-.works__filters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 50px;
-  padding-left: 0;
-}
+  &__filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+    padding-left: 0;
+  }
 
-.works__item:hover,
-.works__item:focus {
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: -webkit-box-shadow;
-  transition-property: box-shadow;
-  transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.works__title {
-  display: none;
+  &__title {
+    display: none;
+  }
 }
 
 .works__item {
@@ -39,24 +23,36 @@
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  color: var(--color-two);
-  background: var(--color-four);
+  color: $color-two;
+  background: $color-four;
   padding: 6px 22px;
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
-}
 
-.works__item:hover,
-.works__item:focus {
-  -webkit-transition-property: background-color, color;
-  transition-property: background-color, color;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  color: var(--background-main);
-  background-color: var(--color-three);
+  &:hover,
+  &:focus {
+    -webkit-transition-property: background-color, color;
+    transition-property: background-color, color;
+    -webkit-transition-timing-function: $cubic-bezier;
+    transition-timing-function: $cubic-bezier;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    color: $background-main;
+    background-color: $color-three;
+    -webkit-transition-property: -webkit-box-shadow;
+    transition-property: -webkit-box-shadow;
+    transition-property: box-shadow;
+    transition-property: box-shadow, -webkit-box-shadow;
+    -webkit-transition-timing-function: $cubic-bezier;
+    transition-timing-function: $cubic-bezier;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-box-shadow: 0px 3px 1px $border-color-hero-button-close,
+      0px 1px 2px $box-shadow-color-works, 0px 2px 2px $box-shadow-primary;
+    box-shadow: 0px 3px 1px $border-color-hero-button-close, 0px 1px 2px $box-shadow-color-works,
+      0px 2px 2px $box-shadow-primary;
+  }
 }
 
 .works__list {
@@ -67,47 +63,43 @@
   flex-wrap: wrap;
   gap: 30px;
   padding-left: 0;
-}
 
-.works__list > li {
-  position: relative;
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-  flex-basis: calc((100% - 60px) / 3);
-  border: 1px solid var(--border-color-work-list);
-  cursor: pointer;
-}
+  & > li {
+    position: relative;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid $border-color-work-list;
+    cursor: pointer;
+  }
 
-.works__list > li:hover {
-  -webkit-transition-property: -webkit-box-shadow;
-  transition-property: -webkit-box-shadow;
-  transition-property: box-shadow;
-  transition-property: box-shadow, -webkit-box-shadow;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-duration: 250ms;
-  transition-duration: 250ms;
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+  & > li:hover {
+    -webkit-transition-property: -webkit-box-shadow;
+    transition-property: -webkit-box-shadow;
+    transition-property: box-shadow;
+    transition-property: box-shadow, -webkit-box-shadow;
+    -webkit-transition-timing-function: $cubic-bezier;
+    transition-timing-function: $cubic-bezier;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-box-shadow: 0px 1px 1px $box-shadow-primary, 0px 4px 4px $box-shadow-color-works-two,
+      1px 4px 6px $box-shadow-color-works-three;
+    box-shadow: 0px 1px 1px $box-shadow-primary, 0px 4px 4px $box-shadow-color-works-two,
+      1px 4px 6px $box-shadow-color-works-three;
+  }
 
-.works__list-item {
-  position: relative;
-  overflow: hidden;
-}
+  &__list-item {
+    position: relative;
+    overflow: hidden;
+  }
 
-.works__list-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--color-two);
-  margin-bottom: 4px;
-}
-
-.works__list-text {
-  color: var(--main-color);
+  &__list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $color-two;
+    margin-bottom: 4px;
+  }
 }
 
 .works__list-overlay {
@@ -117,8 +109,8 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--background-main);
-  background-color: var(--overlay-color);
+  color: $background-main;
+  background-color: $overlay-color;
   padding: 63px 24px;
   opacity: 0;
   -webkit-transform: translateY(100%);
@@ -135,8 +127,8 @@
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-timing-function: $cubic-bezier;
+  transition-timing-function: $cubic-bezier;
 }
 
 .works__list-thumb {
