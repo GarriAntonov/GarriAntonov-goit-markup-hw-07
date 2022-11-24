@@ -185,7 +185,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  line-height: 0;
+  line-height: 1;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -359,7 +359,6 @@ textarea {
 .benefits {
   display: none;
 }
-
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,9 +368,7 @@ textarea {
   justify-content: space-between;
   gap: 30px;
   padding-left: 0;
-  /* outline: 1px solid red; */
 }
-
 .benefits__svg {
   display: -webkit-box;
   display: -ms-flexbox;
