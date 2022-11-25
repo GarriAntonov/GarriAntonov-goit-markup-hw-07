@@ -151,11 +151,13 @@
     border-color: $color-three;
     outline: none;
   }
+
+  &:focus + &__icon-modal {
+    fill: $color-three;
+  }
 }
 
-.hero__input-property:focus + .hero__icon-modal {
-  fill: $color-three;
-}
+
 
 .hero__icon-modal {
   position: absolute;
@@ -173,7 +175,7 @@
   letter-spacing: 0.01em;
   color: $hero-textarea-color;
 
-  .hero__textarea-property:focus {
+  &:focus {
     border-color: $color-three;
     outline: none;
   }
