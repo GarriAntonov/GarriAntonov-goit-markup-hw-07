@@ -30,15 +30,9 @@
   }
 
   &__button {
-    font-weight: 700;
-    font-size: 16px;
+    @include buttons;
     line-height: 1.9;
-    letter-spacing: 0.06em;
-    color: $background-main;
     background-color: $color-three;
-    -webkit-box-shadow: 0px 4px 4px $hero-shadow;
-    box-shadow: 0px 4px 4px $hero-shadow;
-    border-radius: 4px;
     border: transparent;
     padding: 10px 32px;
     cursor: pointer;
@@ -245,16 +239,9 @@ textarea {
 }
 
 .hero__button-submit {
+  @include buttons;
   padding: 10px 52px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: $background-main;
   background: $color-three;
-  -webkit-box-shadow: 0px 4px 4px $hero-button-submit;
-  box-shadow: 0px 4px 4px $hero-button-submit;
-  border-radius: 4px;
   border-style: none;
   cursor: pointer;
 }
